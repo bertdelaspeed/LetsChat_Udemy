@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "700242794938",
+    "project_id": "chatudemy-9c6d7",
+    "storage_bucket": "chatudemy-9c6d7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:700242794938:android:e1c68d24b54814d7496583",
+        "android_client_info": {
+          "package_name": "com.bertdelaspeed.letschatUdemy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "700242794938-8pgv5j65drse553vileh4dl6monj7afu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArCktzpw4l0e5ra4DjkqZiHELOg1uhqlw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "700242794938-8pgv5j65drse553vileh4dl6monj7afu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

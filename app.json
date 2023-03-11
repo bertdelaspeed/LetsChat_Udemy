@@ -1,33 +1,49 @@
 {
   "expo": {
     "name": "LetsChatUdemy",
-    "slug": "LetsChatUdemy",
+    "slug": "letschatudemy",
     "version": "1.0.0",
+    "scheme": "com.bertdelaspeed.letschatUdemy",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/LetsChat_logo.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/LetsChat_splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
     "android": {
+      "package": "com.bertdelaspeed.letschatUdemy",
+      "googleServicesFile": "./google-services.json",
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/LetsChat_logo.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "permissions": ["android.permission.RECORD_AUDIO"]
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "8d5defa2-0a9d-4721-9180-00982fd19636"
+      }
+    },
+    "owner": "bertdelaspeed "
   }
 }
