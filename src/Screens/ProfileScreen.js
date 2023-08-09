@@ -97,6 +97,48 @@ const ProfileScreen = () => {
     }
   };
 
+  // In case you're getting a response error while uploading your image
+  // use the uploadImage method below instead (don't forget to uncomment it)
+
+  // const uploadImage = async (image) => {
+  //   try {
+  //     setIsLoading(true);
+  //     const blob = await new Promise((resolve, reject)=>{
+  //       const xhr = new XMLHttpRequest()
+  //       xhr.onload = function () {
+  //         resolve(xhr.response)
+  //       }
+  //       xhr.onerror = function (e){
+  //         reject(new TypeError("Network request failed"))
+  //       }
+  //       xhr.responseType = 'blob'
+  //       xhr.open('GET', image, true)
+  //       xhr.send(null)
+  //     })
+  //     // console.log("blob = ", JSON.stringify(blob));
+  //     const filename = image.substring(image.lastIndexOf("/"));
+  //     // console.log("filename = ", filename);
+  //     const imageRef = ref(storage, `ProfilePictures/${filename}`);
+  //     uploadBytes(imageRef, blob).then(async () => {
+  //       const downloadUrl = await getDownloadURL(imageRef);
+  //       const querySnapshot = await getDocs(queryResult);
+  //       querySnapshot.forEach(async (document) => {
+  //         await updateDoc(doc(db, "Users", document.id), {
+  //           profilePic: downloadUrl,
+  //         }).then(() => {
+  //           setUserImageUrl(downloadUrl);
+  //           setUserAvatarUrl(downloadUrl);
+
+  //           setIsLoading(false);
+  //         });
+  //       });
+  //     });
+  //   } catch (error) {
+  //     Alert.alert(error.message);
+  //     setIsLoading(false);
+  //   }
+  // };
+
   useEffect(() => {
     if (!user) return;
 
